@@ -1,0 +1,81 @@
+.background-color{
+   -fx-background-color: linear-gradient(to right, #FF6347, #FF69B4);
+}
+
+.transparentBackground-color{
+   -fx-background-color: transparent;
+}
+
+
+
+.button{
+    -fx-border-color: transparent;
+    -fx-border-width: 1px;
+    -fx-border-color: white;
+    -fx-background-radius: 0;
+    -fx-background-color: transparent;
+    -fx-font-family:"Segoe UI", Helvetica, Arial, sans-serif;
+    -fx-font-size: 1.2em; /* 12 */
+    -fx-text-fill: white;
+     -fx-width: 100px;
+    -fx-height: 100px;
+    -fx-border-radius: 50%;
+}
+
+.button:focused {
+    -fx-border-color: transparent, white;
+    -fx-border-style: solid, segments(1, 2);
+    -fx-border-radius: 0, 0;
+    -fx-border-insets: 1 1 1 1, 0;
+    -fx-width: 100px;
+    -fx-height: 100px;
+    -fx-border-radius: 50%;
+}
+
+.button:pressed {
+    -fx-background-color: transparent;
+    -fx-text-fill: white;
+}
+
+.titleLabel {
+    -fx-font-size: 17px;
+    -fx-font-family:"Helvetica";
+    -fx-text-fill: white;
+    -fx-text-alignment: center;
+
+}
+.descriptionText{
+    -fx-font-size: 14px;
+    -fx-font-family:"Helvetica";
+    -fx-text-fill: #FFB6C1;
+    -fx-text-alignment: center;
+    -fx-fill: #FFB6C1;
+
+}
+//These tow text properties below are for the prices one with discount and the other is without
+.priceText {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-fill: orange;
+}
+
+.discountedPriceText {
+    -fx-font-family: "Helvetica";
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+    -fx-strikethrough: true;
+    -fx-fill: orange;
+}
+
+.scroll-pane .scroll-bar:vertical {
+    -fx-opacity: 0;
+}
+
+
+.scroll-pane .corner {
+    -fx-background-color: transparent !important;
+}
+
+
+
