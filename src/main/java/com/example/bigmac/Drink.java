@@ -4,11 +4,13 @@ public class Drink {
     String name;
     double price;
     boolean isAlcoholic;
+    boolean isCold;
 
-    public Drink(String name, double price, boolean isAlcoholic) {
+    public Drink(String name, double price, boolean isAlcoholic, boolean isCold) {
         this.name = name;
         this.price = price;
         this.isAlcoholic = isAlcoholic;
+        this.isCold = isCold;
     }
 
     public String getName() {
@@ -22,4 +24,6 @@ public class Drink {
     public boolean isAlcoholic() {
         return isAlcoholic;
     }
+
+    public boolean isCold() { return isCold;}
 }
