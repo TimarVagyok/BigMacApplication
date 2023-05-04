@@ -1,5 +1,7 @@
 package com.example.bigmac;
 
+import java.security.PublicKey;
+
 public class Pizza {
      String size;
      int numToppings;
@@ -10,10 +12,11 @@ public class Pizza {
         this.size = size;
         this.numToppings = numToppings;
         this.isGlutenFree = isGlutenFree;
-        this.price = calculatePrice();
     }
 
-    private double calculatePrice() {
+ 
+
+   public double calculatePizzaPrice() {
         double basePrice = 8.0;
         double sizePrice = 0.0;
         if (size.equals("Small")) {
@@ -25,7 +28,7 @@ public class Pizza {
         }
         double toppingPrice = numToppings * 0.5;
         double glutenFreePrice = isGlutenFree ? 1.5 : 0.0;
-        return basePrice + sizePrice + toppingPrice + glutenFreePrice;
+        return price = basePrice + sizePrice + toppingPrice + glutenFreePrice;
     }
 
     public String getSize() {

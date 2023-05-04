@@ -26,57 +26,36 @@ public class Pasta {
         return name;
     }
 
-    public void setName(String name) {
-        this.name = name;
-    }
 
     public String getMeat() {
         return meat;
     }
 
-    public void setMeat(String meat) {
-        this.meat = meat;
-    }
 
     public com.example.bigmac.PastaType getPastaType() {
         return PastaType;
     }
 
-    public void setPastaType(com.example.bigmac.PastaType pastaType) {
-        PastaType = pastaType;
-    }
 
     public boolean isHascheese() {
         return hascheese;
     }
 
-    public void setHascheese(boolean hascheese) {
-        this.hascheese = hascheese;
-    }
 
     public boolean isHasseafood() {
         return hasseafood;
     }
 
-    public void setHasseafood(boolean hasseafood) {
-        this.hasseafood = hasseafood;
-    }
 
     public boolean isHasbacon() {
         return hasbacon;
     }
 
-    public void setHasbacon(boolean hasbacon) {
-        this.hasbacon = hasbacon;
-    }
 
     public boolean isHastomato() {
         return hastomato;
     }
 
-    public void setHastomato(boolean hastomato) {
-        this.hastomato = hastomato;
-    }
 
     public boolean isHassalami() {
         return hassalami;
@@ -86,7 +65,7 @@ public class Pasta {
         this.hassalami = hassalami;
     }
     //calculate price
-    private double calculatePrice() {
+    public double calculatePastaPrice() {
         double basePrice = 5.0;
         double meatPrice = 0.0;
         if (meat.equals("Chicken")) {

@@ -17,7 +17,7 @@ public class Gyros {
         this.price = calculatePrice();
     }
 
-    private double calculatePrice() {
+    public double calculatePrice() {
         double basePrice = 5.0;
         double meatPrice = 0.0;
         if (meat.equals("Chicken")) {
