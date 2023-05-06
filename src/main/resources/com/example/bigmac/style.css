@@ -24,6 +24,7 @@
 
 .button:focused {
     -fx-border-color: transparent, white;
+    /*noinspection CssInvalidFunction*/
     -fx-border-style: solid, segments(1, 2);
     -fx-border-radius: 0, 0;
     -fx-border-insets: 1 1 1 1, 0;
@@ -52,7 +53,7 @@
     -fx-fill: #FFB6C1;
 
 }
-//These tow text properties below are for the prices one with discount and the other is without
+/*These tow text properties below are for the prices one with discount and the other is without*/
 .priceText {
     -fx-font-family: "Helvetica";
     -fx-font-size: 20px;
