@@ -27,4 +27,26 @@ class PastaTest {
                 true,true,true);
         assertEquals(10.6,AllinOnePasta.calculatePastaPrice());
     }
+    @Test
+    void testPastaPriceWithCheese() {
+        var pasta = new Pasta("Pasta with Cheese", "Chicken",
+                PastaType.Fusilli, true, true,
+                false, false, false);
+        assertEquals(8.5, pasta.calculatePastaPrice());
+    }
+
+    @Test
+    void testPastaPriceWithSeafoodAndBacon() {
+        var pasta = new Pasta("Pasta with Seafood and Bacon", "Beef",
+                PastaType.penne, true, true, true, false, true);
+        assertEquals(10.8, pasta.calculatePastaPrice());
+    }
+
+    @Test
+    void testPastaPriceWithTomatoesAndSalami() {
+        var pasta = new Pasta("Pasta with Tomatoes and Salami", "Lamb",
+                PastaType.Spaghetti, true, true, false, true, false);
+        assertEquals(9.8, pasta.calculatePastaPrice());
+    }
+
 }
