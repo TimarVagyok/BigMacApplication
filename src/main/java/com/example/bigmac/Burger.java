@@ -1,6 +1,6 @@
 package com.example.bigmac;
 
-public class Burger {
+public class Burger extends MenuItem {
      String name;
      String meat;
      String bread;
@@ -14,6 +14,7 @@ public class Burger {
      boolean mayo;
 
     public Burger(String name, String meat, String bread, boolean cheese, boolean lettuce, boolean tomato, boolean onion, boolean pickles, boolean ketchup, boolean mustard, boolean mayo) {
+        super(name);
         this.name = name;
         this.meat = meat;
         this.bread = bread;
@@ -118,7 +119,7 @@ public class Burger {
     }
     // method to calculate price based on ingredients
     public double getPrice() {
-        double price = 0.0;
+        double price = super.getPrice();
         price += 2.5; // base price
         if (meat.equals("Beef")) {
             price += 1.5;
