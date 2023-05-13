@@ -1,11 +1,12 @@
 package com.example.bigmac;
-public class Pasta {
+public class Pasta extends MenuItem {
     
     private String name;
     private String type;
     private double price;
     
     public Pasta(String name, String type, double price) {
+        super(name);
         this.name = name;
         this.type = type;
         this.price = price;
@@ -28,6 +29,7 @@ public class Pasta {
     }
     
     public double getPrice() {
+        double price = super.getPrice();
         return price;
     }
     
