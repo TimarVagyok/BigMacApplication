@@ -1,6 +1,6 @@
 package com.example.bigmac;
 
-public class Gyros {
+public class Gyros extends MenuItem{
     String meat;
     boolean hasTomatoes;
     boolean hasOnions;
@@ -9,6 +9,7 @@ public class Gyros {
     double price;
 
     public Gyros(String meat, boolean hasTomatoes, boolean hasOnions, boolean hasLettuce, boolean hasTzatziki) {
+        super(name);
         this.meat = meat;
         this.hasTomatoes = hasTomatoes;
         this.hasOnions = hasOnions;
@@ -17,7 +18,7 @@ public class Gyros {
         this.price = calculatePrice();
     }
 
-    private double calculatePrice() {
+    public double calculatePrice() {
         double basePrice = 5.0;
         double meatPrice = 0.0;
         if (meat.equals("Chicken")) {
@@ -64,6 +65,7 @@ public class Gyros {
     }
 
     public double getPrice() {
+        double price = super.getPrice();
         return price;
     }
 }
