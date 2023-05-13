@@ -1,12 +1,13 @@
 package com.example.bigmac;
 
-public class MediterraneanFood {
+public class MediterraneanFood extends MenuItem {
     
     private String name;
     private String description;
     private double price;
     
     public MediterraneanFood(String name, String description, double price) {
+        super(name);
         this.name = name;
         this.description = description;
         this.price = price;
@@ -29,6 +30,7 @@ public class MediterraneanFood {
     }
     
     public double getPrice() {
+        double price = super.getPrice();
         return price;
     }
     
