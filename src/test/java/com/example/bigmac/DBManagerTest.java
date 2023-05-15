@@ -25,14 +25,14 @@ public class DBManagerTest {
     public static void tearDown() throws SQLException {
         dropTables();
     }
-
+//tests the getConnection() in Dbmanager
     @Test
     public void testGetConnection() throws SQLException {
         try (Connection conn = DBManager.getConnection()) {
             assertNotNull(conn);
         }
     }
-
+ //establish a connection to the database and execute SQL statements to create and drop the required tables.
     private static void createTables() throws SQLException {
         try (Connection conn = DriverManager.getConnection(DB_URL, DB_USER, DB_PASSWORD);
              Statement stmt = conn.createStatement()) {

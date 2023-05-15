@@ -21,5 +21,5 @@ class UserTest {
         assertEquals(userName, user.getUserName());
         assertEquals(password, user.getPassword());
     }
-
+//verifies the behavior of the User class constructor.
 }
